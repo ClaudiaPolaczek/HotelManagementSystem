@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Claudia\\Desktop\\Semestr II - mgr\\.NET\\HotelManagementSystem\\HotelSystem\\HotelSystem\\HotelSystem.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Claudia\\Desktop\\Semestr II - mgr\\.NET\\HotelManagementSystem\\HotelSystem\\HotelSystem\\HotelSystem.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Claudia\\Desktop\\Semestr II - mgr\\.NET\\HotelManagementSystem\\HotelSystem\\HotelSystem\\HotelSystem.csproj",
+        "projectName": "HotelSystem",
+        "projectPath": "C:\\Users\\Claudia\\Desktop\\Semestr II - mgr\\.NET\\HotelManagementSystem\\HotelSystem\\HotelSystem\\HotelSystem.csproj",
+        "packagesPath": "C:\\Users\\Claudia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Claudia\\Desktop\\Semestr II - mgr\\.NET\\HotelManagementSystem\\HotelSystem\\HotelSystem\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Claudia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "MaterialDesignThemes.MahApps": {
+              "target": "Package",
+              "version": "[0.1.5, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

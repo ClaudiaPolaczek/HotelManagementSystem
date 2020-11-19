@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "D3bj3+Zj1+zkJG6NwtwoMMGxzv8hpK6VHMsZtMRoF9bEdNZ2M5o+e57jBjL3CaUiaGA+QN4ursbznKZXo7ZJPw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Claudia\\Desktop\\Semestr II - mgr\\.NET\\HotelManagementSystem\\HotelSystem\\HotelSystem\\HotelSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Claudia\\.nuget\\packages\\controlzex\\4.2.2\\controlzex.4.2.2.nupkg.sha512",
+    "C:\\Users\\Claudia\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\Claudia\\.nuget\\packages\\mahapps.metro\\2.0.0-alpha0748\\mahapps.metro.2.0.0-alpha0748.nupkg.sha512",
+    "C:\\Users\\Claudia\\.nuget\\packages\\materialdesigncolors\\1.2.7\\materialdesigncolors.1.2.7.nupkg.sha512",
+    "C:\\Users\\Claudia\\.nuget\\packages\\materialdesignthemes\\3.2.0\\materialdesignthemes.3.2.0.nupkg.sha512",
+    "C:\\Users\\Claudia\\.nuget\\packages\\materialdesignthemes.mahapps\\0.1.5\\materialdesignthemes.mahapps.0.1.5.nupkg.sha512",
+    "C:\\Users\\Claudia\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512"
+  ],
+  "logs": []
+}

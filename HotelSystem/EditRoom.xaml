@@ -1,0 +1,87 @@
+﻿<Page x:Class="HotelSystem.EditRoom"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:HotelSystem"
+      mc:Ignorable="d" 
+       d:DesignHeight="600" d:DesignWidth="800" FontFamily="Hervetica" FontSize="16" Foreground="Black"
+      Title="EditRoom">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="400"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="550"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.ColumnSpan="2">
+            <TextBlock Margin="20 16 12 4" FontSize="16">Edit room</TextBlock>
+            <Separator Style="{StaticResource MaterialDesignLightSeparator}" Background="LightGray" Margin="16 0 12 0"/>
+        </StackPanel>  
+
+        <StackPanel Margin="16 10 10 0" Grid.ColumnSpan="2" Grid.Row="2">
+            <TextBox materialDesign:HintAssist.Hint="Number" Name="NumberTextBox" Width="350" Height="50" PreviewTextInput="NumberValidationTextBox" 
+                     Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+                     materialDesign:HintAssist.Foreground="CadetBlue"
+                     materialDesign:TextFieldAssist.UnderlineBrush="CadetBlue"/>
+            <ComboBox materialDesign:HintAssist.Hint="Capacity" Name="CapacityTextBox" Width="350" Height="50" IsEditable="True" Margin="0 20 0 0" 
+                      Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                      materialDesign:HintAssist.Foreground="CadetBlue"
+                      materialDesign:TextFieldAssist.UnderlineBrush="CadetBlue">
+                <ComboBoxItem IsSelected="True">
+                    1
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    2
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    3
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    4
+                </ComboBoxItem>
+            </ComboBox>
+            <ComboBox materialDesign:HintAssist.Hint="Floor" Name="FloorTextBox" Width="350" Height="50" IsEditable="True" Margin="0 20 0 0"
+                      Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                       materialDesign:HintAssist.Foreground="CadetBlue"
+                     materialDesign:TextFieldAssist.UnderlineBrush="CadetBlue">
+                <ComboBoxItem IsSelected="True">
+                    1
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    2
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    3
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    4
+                </ComboBoxItem>
+            </ComboBox>
+            <TextBox materialDesign:HintAssist.Hint="Price" Name="PriceTextBox" Width="350" Height="50" 
+                     Style="{StaticResource MaterialDesignFloatingHintTextBox}" PreviewTextInput="DoubleNumberValidationTextBox"
+                      materialDesign:HintAssist.Foreground="CadetBlue"
+                     materialDesign:TextFieldAssist.UnderlineBrush="CadetBlue"/>
+            <ComboBox materialDesign:HintAssist.Hint="Suite" Name="SuiteBox" Width="350" Height="50" IsEditable="True" Margin="0 20 0 0" 
+                      Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                       materialDesign:HintAssist.Foreground="CadetBlue"
+                     materialDesign:TextFieldAssist.UnderlineBrush="CadetBlue">
+                <ComboBoxItem IsSelected="True">
+                    Yes
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    No
+                </ComboBoxItem>
+            </ComboBox>
+            <TextBlock Name="ErrorBox" Foreground="Red" Visibility="Hidden" Width="350" Margin="0 10 0 0" Height="30"
+                        materialDesign:HintAssist.Foreground="CadetBlue"
+                     materialDesign:TextFieldAssist.UnderlineBrush="CadetBlue"/>
+            <Button Content="Save" Margin="0 90 0 0" Width="100" Height="40" VerticalAlignment="Center" Click="EditRoomButton"/>
+        </StackPanel>
+    </Grid>
+</Page>

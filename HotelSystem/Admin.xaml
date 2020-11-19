@@ -1,0 +1,78 @@
+﻿<Window x:Class="HotelSystem.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:HotelSystem"
+        mc:Ignorable="d"
+        Title="Admin" Height="650" Width="1000"
+        AllowsTransparency="True"
+        WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Foreground="Black" FontWeight="Light" MouseDown="Window_MouseDown"
+        FontFamily="helvetica" FontSize="18">
+
+    <Grid Background="#FFF3F2F2">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="800"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="600"/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="GridMain" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="600" Width="800">
+            <Frame x:Name="Main" NavigationUIVisibility="Hidden"/>
+        </Grid>
+        <Grid Height="50" Grid.Row="0" Grid.Column="0" Background="CadetBlue"/>
+        <Grid Height="50" Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" Background="CadetBlue">
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="1" ShadowDepth="1" Color="#FFACACAC"/>
+            </Grid.Effect>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Height="50">
+                <TextBlock Text="Admin" VerticalAlignment="Center" FontSize="18" />
+                <materialDesign:PopupBox Content="PopupBox" HorizontalAlignment="Right"
+                                     VerticalAlignment="Center" StaysOpen="False" Margin="10"
+                                     PlacementMode="BottomAndAlignRightEdges">
+                    <StackPanel Width="100" Margin="5">
+                        <Button x:Name="ButtonPopUpLogout" FontSize="15" Content="Logout" Click="ButtonPopUpLogout_Click"/>
+                    </StackPanel>
+                </materialDesign:PopupBox>
+            </StackPanel>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20">Hotel Management System</TextBlock>
+        </Grid>
+
+        <Grid x:Name="GridMenu" Grid.Row="1" Grid.Column="0" Width="200" HorizontalAlignment="Left" Background="White">
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="2" ShadowDepth="1" Color="#FFAEAEAE"/>
+            </Grid.Effect>
+
+            <StackPanel>
+                <Grid Height="300" Background="White">
+                    <ListView x:Name="ListViewMenu" FontSize="18" Foreground="Black" BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                        <ListViewItem x:Name="ItemRoom" Height="60" Selected="ItemRoom_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Bed" Height="25" Width="25" Margin="10"/>
+                                <TextBlock Text="Rooms" VerticalAlignment="Center" Margin="10 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem x:Name="ItemNewRoom" Height="60" Selected="ItemNewRoom_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Pen" Height="25" Width="25" Margin="10"/>
+                                <TextBlock Text="New room" VerticalAlignment="Center" Margin="10 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem x:Name="ItemEmployee" Height="60" Selected="ItemEmployees_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Face" Height="25" Width="25" Margin="10"/>
+                                <TextBlock Text="Employees" VerticalAlignment="Center" Margin="10 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                    </ListView>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
